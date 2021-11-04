@@ -1,0 +1,55 @@
+.newsletter {
+    position: relative;
+    background: $pink;
+    color: $text;
+    padding: 80px 10%;
+
+    @media screen and (min-width: $medium) {
+        padding: 130px 10%;
+    }
+
+    .crosshead {
+        color: $white;
+    }
+}
+
+
+#mc_embed_signup {
+    font-size: 1.1rem;
+    background: $white;
+    margin-bottom: 15px;
+    padding: 25px;
+    border-radius: 10px;
+
+
+    a {
+        color: $pink;
+    }
+
+    input {
+        box-shadow: 0px 5px 10px transparentize(darken($text, 20), 0.9);
+        transition: 0.3s ease-out;
+        padding: 15px 15px !important;
+        font-size: 1.1rem;
+        text-indent: 0 !important;
+    }
+
+    .button {
+        background-color: $pink !important;
+        color: $white !important;
+        font-size: 1.1rem !important;
+        height: auto !important;
+        width: auto !important;
+        margin: 0px auto;
+        font-weight: bold;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+}
+
+#mc-embedded-subscribe-form .mc_fieldset {
+    margin: 30px 10px;
+}
