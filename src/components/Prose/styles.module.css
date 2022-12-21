@@ -1,0 +1,77 @@
+.prose {
+  position: relative;
+  padding: 80px 10%;
+  text-align: center;
+  color: var(--text);
+}
+
+.prose h2,
+.prose p {
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.prose p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.prose p strong {
+  color: var(--pink);
+}
+
+.prose p:last-of-type {
+  margin-bottom: 0px;
+}
+
+/* var(--medium) */
+@media screen and (min-width: 830px) {
+  .prose p {
+    font-size: 1.4rem;
+  }
+}
+
+.tickList {
+  list-style: none;
+  text-align: left;
+  margin-top: 85px;
+}
+
+/* var(--medium) */
+@media screen and (min-width: 830px) {
+  .tickList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 65px;
+  }
+}
+
+.tickList li {
+  position: relative;
+  margin-bottom: 25px;
+  padding-left: 75px;
+  font-size: 1.2rem;
+}
+.tickList li strong {
+  color: $pink;
+}
+
+@media screen and (min-width: 830px) {
+  .tickList li {
+    font-size: 1.4rem;
+  }
+}
+
+.tickList li:before {
+  content: "";
+  background-image: url("./tick.svg");
+  background-position: center;
+  background-size: contain;
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}

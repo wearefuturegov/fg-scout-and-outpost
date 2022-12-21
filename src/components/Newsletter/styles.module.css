@@ -1,0 +1,17 @@
+.newsletter {
+  position: relative;
+  background: var(--pink);
+  color: var(--text);
+  padding: 80px 10%;
+}
+
+/* var(--medium) */
+@media screen and (min-width: 830px) {
+  .newsletter {
+    padding: 130px 10%;
+  }
+}
+
+.crosshead {
+  color: var(--white);
+}
