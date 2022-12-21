@@ -14,7 +14,7 @@ export default function Hero() {
       <p className={styles.caption}>{siteConfig.title}</p>
       <h1 className={styles.headline}>{siteConfig.tagline}</h1>
       <Button href={docsData?.path} size="lg" type="secondary">
-        View Documentation
+        View documentation
       </Button>
       <Triangle inverted={false} svgPath="M2000 0L2000 2000H0L2000 0Z" />
     </section>
