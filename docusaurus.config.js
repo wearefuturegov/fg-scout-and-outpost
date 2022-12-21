@@ -65,6 +65,13 @@ const config = {
               tagName: "link",
               attributes: {
                 rel: "stylesheet",
+                href: "/shame.css",
+              },
+            },
+            {
+              tagName: "link",
+              attributes: {
+                rel: "stylesheet",
                 href: "https://use.typekit.net/wsk4rpc.css",
               },
             },

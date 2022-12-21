@@ -1,0 +1,5 @@
+/* Webpack doesn't behave nicely with images so we're doing this now apparently */
+
+.hero:before {
+  background-image: url("./img/components/Hero/hero.jpg");
+}
