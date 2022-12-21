@@ -1,0 +1,89 @@
+.button {
+  display: inline-block;
+  margin: 0 auto;
+  /* max-width: 200px; */
+  border-radius: 100px;
+  font-size: 1.2rem;
+  background: var(--background);
+  color: var(--purple);
+  padding: 10px 15px;
+  font-weight: bold;
+  margin: 5px;
+  border: none;
+  min-width: 200px;
+  text-align: center;
+  text-decoration: none;
+}
+.button:hover {
+  background: var(--background-dark);
+  text-decoration: none;
+  color: var(--purple);
+}
+.button:focus {
+  outline: none;
+  box-shadow: 0px 0px 0px 3px var(--focus);
+}
+
+.button.md {
+  padding: 15px 40px;
+  font-size: 1.1rem;
+}
+.button.lg {
+  padding: 20px 50px;
+  font-size: 1.2rem;
+}
+
+.button.primary {
+  background: var(--pink);
+  color: #ffffff;
+}
+.button.primary:hover {
+  background: var(--pink-dark);
+  text-decoration: none;
+  color: #ffffff;
+}
+.button.primary:focus {
+  outline: none;
+  box-shadow: 0px 0px 0px 3px var(--focus);
+}
+
+.button.secondary {
+  background: var(--purple);
+  color: #ffffff;
+}
+.button.secondary:hover {
+  background: var(--purple-dark);
+  text-decoration: none;
+  color: #ffffff;
+}
+.button.secondary:focus {
+  outline: none;
+  box-shadow: 0px 0px 0px 3px var(--focus);
+}
+
+.button.grey {
+  background: var(--grey);
+  color: #ffffff;
+}
+.button.grey:hover {
+  background: var(--grey-dark);
+  text-decoration: none;
+  color: #ffffff;
+}
+.button.grey:focus {
+  outline: none;
+  box-shadow: 0px 0px 0px 3px var(--focus);
+}
+
+/* var(--medium) */
+@media screen and (min-width: 830px) {
+  .button {
+    font-size: 1rem;
+  }
+  .button.md {
+    font-size: 1.2rem;
+  }
+  .button.lg {
+    font-size: 1.4rem;
+  }
+}

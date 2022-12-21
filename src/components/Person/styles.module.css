@@ -1,0 +1,49 @@
+.person {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid var(--ifm-color-gray-200);
+  border-radius: var(--ifm-global-radius);
+}
+[data-theme="dark"] .person {
+  border-color: var(--ifm-color-gray-800);
+  background-color: var(--ifm-color-gray-900);
+}
+
+.person .row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.person .image {
+  border-radius: 50%;
+  padding: 0.5rem;
+  filter: grayscale(1);
+}
+
+.person .name {
+  font-weight: bold;
+}
+
+.person .pronouns {
+  padding: 0 0.5rem;
+  font-weight: normal;
+  font-size: 0.9rem;
+}
+
+.person .role {
+  font-weight: bold;
+  color: var(--ifm-color-primary);
+}
+
+.person .content {
+  padding: 0 1rem 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+.personGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  align-items: flex-start;
+}

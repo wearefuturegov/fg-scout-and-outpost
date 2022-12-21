@@ -1,0 +1,94 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #524582;
+  --ifm-color-primary-dark: #4a3e75;
+  --ifm-color-primary-darker: #463b6e;
+  --ifm-color-primary-darkest: #39305b;
+  --ifm-color-primary-light: #5a4c8f;
+  --ifm-color-primary-lighter: #5e4f95;
+  --ifm-color-primary-lightest: #6b5ba8;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  /* @TODO merge in old css code to new styles */
+  --text: #170710;
+  --purple: #292242;
+  --purple-dark: #281d4f;
+  --pink: #e53094;
+  --pink-dark: #b82375;
+  --grey: #504e4f;
+  --grey-dark: #2d2a2c;
+  --background: #f4f2f3;
+  --background-dark: #d7d4d6;
+  --white: #ffffff;
+  --focus: #ffc603;
+
+  --sm: 600px;
+  --medium: 830px;
+  --large: 1500px;
+
+  --ifm-heading-margin-top: var(--ifm-spacing-vertical);
+  --ifm-color-content: var(--text);
+  --triangle-color-white: var(--white);
+  --triangle-color-grey: var(--background);
+  --resources-item-background: var(--white);
+  --resources-item-box-shadow: var(--ifm-hover-overlay);
+
+  --ifm-footer-background-color: var(--purple);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme="dark"] {
+  --ifm-color-primary: #8973d9;
+  --ifm-color-primary-dark: #8973d9;
+  --ifm-color-primary-darker: #7a61d4;
+  --ifm-color-primary-darkest: #5d3fcb;
+  --ifm-color-primary-light: #9f8de0;
+  --ifm-color-primary-lighter: #aa9ae4;
+  --ifm-color-primary-lightest: #cbc1ee;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  --text: #e8f8ef;
+  --background: var(--ifm-background-color);
+  --white: var(--ifm-background-color);
+  --resources-item-background: var(--ifm-background-surface-color);
+  --resources-item-box-shadow: rgba(0, 0, 0, 0.1);
+  --triangle-color-white: var(--ifm-background-color);
+  --triangle-color-grey: var(--ifm-background-color);
+}
+
+.crosshead {
+  color: var(--text);
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.crosshead.inverted {
+  color: var(--white);
+}
+
+/* var(--medium) */
+@media screen and (min-width: 830px) {
+  .crosshead {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+  }
+}
+
+.triangle {
+  fill: var(--triangle-color-white);
+}
+.triangle.grey {
+  fill: var(--triangle-color-grey);
+}
+
+.footer--dark {
+  --ifm-footer-background-color: var(--purple);
+}

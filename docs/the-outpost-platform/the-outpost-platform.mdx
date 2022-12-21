@@ -1,0 +1,103 @@
+---
+sidebar_position: 1
+slug: /the-outpost-platform
+id: the-outpost-platform
+---
+
+# The Outpost Platform
+
+import ImageWindow from "@site/src/components/ImageWindow";
+import OutpostPlatformParts from "./../partials/_outpost-platform-parts.mdx";
+
+<ImageWindow banner={true}>
+
+![Outpost Platform](/img/outpost-platform.png)
+
+</ImageWindow>
+
+✨ The Outpost Platform* referrs to the suite of applications, tools and resources that make new kinds of service 'directories' possible. Its *free, open source and community driven\*.
+
+Currently the platform contains:
+
+<OutpostPlatformParts />
+
+:::note
+
+\* `Outpost` is an application, `Outpost Platform` referrs to everything making up the entire eco-system. The wider name needs [suggestions](https://github.com/wearefuturegov/outpost/discussions)!
+
+:::
+
+## Outpost Platform Architecture
+
+Outpost is currently made up of two _core_ applications. [Outpost](outpost) and [Outpost API service](outpost-api-service).
+
+There are other applications, tools and utilities which allow you expand and customise the platform to suit your needs. Some of the applications such as [Scout](scout) and [Find a childminder](find-a-childminder) work out of the box but they can also be customised or completely re-written depending on your requirements.
+
+<ImageWindow size="auto">
+
+![image](/img/outpost-architecture.png)
+
+</ImageWindow>
+
+## Why use the Outpost Platform?
+
+- 💽 You own and manage your own data
+- 🎁 Works out of the box
+- 🔅 Low cost to get started
+- 🕴 Extensible - customise to suit your needs without re-inventing the basics
+- ⚒ Provides the tools you need to customise to your requirements (see [[Milestones]])
+- 😵 Free up time spent wrangling data
+- 🆕 New features are shared across adopters of the platform for the benefit of everyone
+- 〽 Part of a community with a common goal
+- 👨‍👦 Provide data to people who may have been grouped under the wrong categories in the past
+
+## The Outpost Model
+
+We've been building service directories and similar things for years, and we've had several attempts at solving this problem. All that research and co-design done in different places in the UK has gone into this model.
+
+<ImageWindow size="auto">
+
+![the-outpost-model.png](/img/the-outpost-model.png)
+
+</ImageWindow>
+
+The Outpost Model revolves around one central data source, published in many places.
+
+We are no longer limited to using a one-size-fits-all service directory. People looking for childcare are in a different frame of mind to people looking for sports to do at the weekend.
+
+We can even publish community service data alongside our other services. Imagine applying for some statutory help from the council and, based on the information you give as part of that application, postcode, age, and so on, we can automatically say - hey, here's some other things you'll find useful.
+
+We don't have to ask them to visit our service directory and just hope that they will any more. **We can give people useful resources at the point of need** - because if there's anything that we've learned about service directories it's that it's very rare that people deliberately seek them out.
+
+**Whatever size the audience of your directory is, there's a much larger latent group of users who, for whatever reason, just don't use it.**
+
+There's more to the model:
+
+- Rather than council officers making edits directly, we've really emphasised a subset of residents (community users) owning and editing their own records, and we've made it easy for them to add multiple services or invite friends and colleagues to help them do that.
+- Those people can have different logins, which prevents password sharing, which may well be the biggest security risk you don't know you have.
+- Council officers then just need to approve edits, which is another **big reduction in admin effort**
+- **We store all the changes** in a way that will be familiar to you if you've used the revision history in Google Docs.
+
+## What the Outpost Platform is not
+
+<ImageWindow size="auto">
+
+![what-it-isnt.png](/img/what-it-isnt.png)
+
+</ImageWindow>
+
+Despite all the above it isn't one app to fix everything. It is a platform, an ecosystem.
+
+It's designed to work alongside and integrate with the other services your organisation offers.
+
+You need to take the “one data source published in lots of places” model to heart, otherwise you wont really see the benefits of the Outpost model.
+
+We have nonetheless, made an example frontend to help get you started, which we call [Scout](https://github.com/wearefuturegov/scout-x).
+
+It's also **not a content management system**. Some products will let you edit information, advice and guidance pages. We deliberately chose not to try and reinvent that functionality - there's plenty of great content management tools out there like [Wordpress](https://wordpress.com/), [Drupal](https://drupal.org/), [Localgov Drupal](https://localgovdrupal.org/) and static site generators like [Gatsby](https://www.gatsbyjs.com/). The Outpost model allows you to integrate with these applications.
+
+We're about **integrating with what's already there**.
+
+Most importantly is not finished! Outpost is not quite three years old. It's being used by councils and other types of authorities at the moment.
+
+The more people get involved, the more we can [build a community](https://github.com/wearefuturegov/outpost/discussions) around this new model and keep making it better. There is a huge amount of freedom to shape the direction of Outpost to suit your needs.

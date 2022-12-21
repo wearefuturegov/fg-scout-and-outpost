@@ -1,0 +1,63 @@
+# Environmental variables
+
+Feel free to copy this table and add your details prior to deployment
+
+Some I haven't included as they are set by Heroku or the resources automatically. I've left `DATABASE_URL` in though since its kind of important even though heroku sets it up for you!
+
+## Outpost
+
+| ENV VAR                                  | Value                                                                                   | Description                                                                                                               | Service                          |
+| ---------------------------------------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | -------------------------------- |
+| `FEEDBACK_FORM_URL`                      |                                                                                         | Link to a feedback form for the service. Shown with the BETA banner for community users.                                  | Any, See [[Customising Outpost]] |
+|                                          |                                                                                         |                                                                                                                           |                                  |
+| `GOOGLE_API_KEY`                         | `outpost_geocode_<ENV>`                                                                 | with the geocoding API enabled, to geocode postcodes                                                                      | See [[Maps]]                     |
+| `GOOGLE_CLIENT_KEY`                      | `outpost_maps_<ENV>`                                                                    | with the javascript and static maps APIs enabled, to add map views to admin screens                                       | See [[Maps]]                     |
+|                                          |                                                                                         |                                                                                                                           |                                  |
+| `GCP_PROJECT`                            |                                                                                         | Used for settings and logo upload                                                                                         | Google cloud storage             |
+| `GCP_BUCKET`                             |                                                                                         | Used for settings and logo upload                                                                                         | Google cloud storage             |
+| `GCP_PROJECT_ID`                         |                                                                                         | Used for settings and logo upload                                                                                         | Google cloud storage             |
+| `GCP_PRIVATE_KEY_ID`                     |                                                                                         | Used for settings and logo upload                                                                                         | Google cloud storage             |
+| `GCP_PRIVATE_KEY`                        |                                                                                         | Used for settings and logo upload                                                                                         | Google cloud storage             |
+| `GCP_CLIENT_EMAIL`                       |                                                                                         | Used for settings and logo upload                                                                                         | Google cloud storage             |
+| `GCP_CLIENT_ID`                          |                                                                                         | Used for settings and logo upload                                                                                         | Google cloud storage             |
+| `GCP_CLIENT_X509_CERT_URL`               | "https://www.googleapis.com/robot/v1/"                                                  | Used for settings and logo upload                                                                                         | Google cloud storage             |
+|                                          |                                                                                         |                                                                                                                           |                                  |
+| `MAILER_FROM`                            | `no-reply@blah.com`                                                                     | From email for emails                                                                                                     | GOV.UK Notify / Sendgrid         |
+| `MAILER_HOST`                            | `https://outpost.blah.com`                                                              | where the app lives on the web, to correctly form urls in emails                                                          | GOV.UK Notify / Sendgrid         |
+| `NOTIFY_API_KEY`                         |                                                                                         | API key for GOV.UK Notify                                                                                                 | GOV.UK Notify                    |
+| `NOTIFY_TEMPLATE_ID`                     |                                                                                         | Template ID for GOV.UK Notify                                                                                             | GOV.UK Notify                    |
+| `SENDGRID_API_KEY`                       |                                                                                         | Not used                                                                                                                  | Sendgrid                         |
+|                                          |                                                                                         |                                                                                                                           |                                  |
+| `OFSTED_API_KEY`                         |                                                                                         | API key for ofsted                                                                                                        |                                  |
+| `OFSTED_FEED_API_ENDPOINT`               |                                                                                         | Endpoint for ofsted feed                                                                                                  |                                  |
+|                                          |                                                                                         |                                                                                                                           |                                  |
+| `DATABASE_URL`                           | `postgres://...`                                                                        | Filled in automatically by heroku                                                                                         | Heroku                           |
+| `DB_URI`                                 | `mongodb+srv://<USERNAME>:<PASSWORD>@<INSTANCE>/<USERNAME>?retryWrites=true&w=majority` | Provided by Atlas MongoDB                                                                                                 | Atlas MongoDB                    |
+| `LANG`                                   | `en_US.UTF-8`                                                                           |                                                                                                                           |                                  |
+|                                          |                                                                                         |                                                                                                                           |                                  |
+| ~~`SCOUT_BUILD_HOOK`~~ (deprecated)      |                                                                                         | Outpost will make a POST request to this webhook URL whenever taxonomies are changed. Intended to trigger Scout rebuilds. | Netlify                          |
+| ~~`SCOUT_URL`~~ (deprecated)             |                                                                                         | Used in emails when changes have been approved.                                                                           | Netlify                          |
+|                                          |                                                                                         |                                                                                                                           |                                  |
+| ~~`OUTPOST_INSTANCE_NAME`~~ (deprecated) |                                                                                         | the name of the Outpost instance. This will appear in invite emails to new users, to let them know who the email is from. |                                  |
+| ~~`INSTANCE`~~ (deprecated?)             |                                                                                         | Was used to set instance specific options before settings were introduced                                                 |                                  |
+
+### Extras
+
+- `HEROKU_APP_ID`
+- `HEROKU_APP_NAME`
+- `HEROKU_RELEASE_CREATED_AT`
+- `HEROKU_RELEASE_VERSION`
+- `HEROKU_SLUG_COMMIT`
+- `HEROKU_SLUG_DESCRIPTION`
+- `PAPERTRAIL_API_TOKEN`
+- `RACK_ENV`
+- `RAILS_ENV`
+- `RAILS_LOG_TO_STDOUT` enabled
+- `RAILS_SERVE_STATIC_FILES` enabled
+- `SECRET_KEY_BASE`
+- `SENTRY_DSN`
+
+### More info
+
+`FEEDBACK_FORM_URL`
+![outpost-feedback-banner.png](/img/outpost-feedback-banner.png)

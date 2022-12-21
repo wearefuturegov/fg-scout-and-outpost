@@ -1,0 +1,12 @@
+.footer {
+  position: relative;
+  background-color: var(--ifm-footer-background-color);
+
+  /* background-color: blue; */
+
+  /* margin-bottom: 80px; */
+  padding: 40px 10%;
+  /* text-align: center; */
+  /* color: var(--text); */
+  /* background: var(--background); */
+}
