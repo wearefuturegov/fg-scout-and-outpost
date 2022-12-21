@@ -8,8 +8,6 @@ import useGlobalData from "@docusaurus/useGlobalData";
 export default function Hero() {
   const globalData = useGlobalData();
   const docsData = globalData["docusaurus-plugin-content-docs"]["default"];
-
-  console.log(docsData);
   const { siteConfig } = useDocusaurusContext();
   return (
     <section className={styles.hero}>
