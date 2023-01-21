@@ -12,7 +12,8 @@
   margin: 0;
 }
 
-.imageWindow img {
+.imageWindow img,
+.imageWindow iframe {
   background: var(--ifm-color-emphasis-100);
   border: 1px solid var(--ifm-color-emphasis-300);
   border-radius: var(--ifm-global-radius);
@@ -22,11 +23,18 @@
   width: auto;
 }
 
-.imageWindow img:hover {
+.imageWindow iframe {
+  max-width: inherit;
+  width: 100%;
+}
+
+.imageWindow img:hover,
+.imageWindow iframe:hover {
   border: 1px solid var(--ifm-color-emphasis-300);
 }
 
-.imageWindow.dark img {
+.imageWindow.dark img,
+.imageWindow.dark iframe {
   background: var(--ifm-color-emphasis-800);
   border: 1px solid var(--ifm-color-emphasis-900);
 }

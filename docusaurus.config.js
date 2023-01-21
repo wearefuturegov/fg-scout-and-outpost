@@ -38,6 +38,7 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl: "https://github.com/wearefuturegov/outpost-docs/tree/main/",
           sidebarCollapsed: true,
+          showLastUpdateTime: true,
         },
         blog: {
           showReadingTime: true,
@@ -121,8 +122,8 @@ const config = {
         title: "Outpost platform",
         logo: {
           alt: "Outpost Icon Logo",
-          src: "logos/logo-icon-outpost-main.svg",
-          srcDark: "logos/logo-icon-outpost-white.svg",
+          src: "img/logos/logo-icon-outpost-main.svg",
+          srcDark: "img/logos/logo-icon-outpost-white.svg",
         },
         items: [
           {

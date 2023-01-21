@@ -1,0 +1,90 @@
+---
+sidebar_position: 2
+---
+
+# Outpost FAQ
+
+import ImageWindow from "@site/src/components/ImageWindow";
+import TOCInline from "@theme/TOCInline";
+
+<TOCInline toc={toc} />
+
+## Does it send automatic reminders to providers that listings need updating or are out of date?
+
+Not currently. We send an email to let a service provider know that someone has left feedback (and some other triggers), but not specifically to remind them to review/update their listing.
+
+## Can the reminders be customised by type of provider, can they have different time intervals by type of provider?
+
+We don't currently classify the type of provider within Outpost since this would be different for each instance. You can however create a custom field to assign a type to a service. Using this information, you could create your own custom notification schedule application. Initially Outpost would only provide time-based prompts to service owners.
+
+## Are there any configurable security measures (2FA/MFA/SSO) for admin users?
+
+See [security](features/security).
+
+We currently only offer username and password for admin and service owners in Outpost. We have included password-less login on our roadmap and are open to suggestions for other implementation ideas as well.
+
+The Outpost API and its database currently sit separately from Outpost. Outpost populates the API database with only public information. This means Outpost could be located behind a firewall or on an internal network while the API sits outside. Since the API database contains no sensitive data this makes it much more secure.
+
+[Outpost itself can also act as an oAuth provider](features/outpost-oauth) for other applications.
+
+## If a LA wanted to adopt this but needed to add different age ranges than what currently exists in outpost, is it possible to customise the options?
+
+Admins can configure a minimum and maximum age; the age ranges with checkboxes are currently not configurable.
+
+## Does each registered provider have a way of tagging them so you can send emails specifically to them?
+
+You can apply labels to users and services - this could allow you to do that. You could pair this with custom fields on services to say "last emailed" as well.
+
+## Would Outpost be able to use data from another directory if the fields are the same?
+
+Currently you could combine the data within your front-end application or create another application to combine data sources to act as your source of truth. In the future we'd like to find a way to combine Open Referral UK data for multiple Outposts, so Outpost instances don't contain duplicate information, e.g., for services on borders or national services.
+
+We hope to have a more modular system for outpost to be able add in more data in the future
+
+## Outpost isn't a resident-facing platform?
+
+Correct, Outpost is only the backend part of a system. The resident interacts with a Scout or a CMS that you're using to display the listings.
+
+The only part of Outpost that is publicly accessible is the feedback form for each service, the login and register pages for users.
+
+The rest of the application requires a login to view. Registered users are then divided into administrators and service owners.
+
+<ImageWindow size="auto">
+
+![image](/img/outpost/screenshots/screenshot-feedback-page.png)
+
+</ImageWindow>
+
+Feedback form for a service - accessed via a link from the directory (in this case the 'suggest a change' link in the Scout directory)
+
+<ImageWindow size="auto">
+
+![image](/img/outpost/screenshots/screenshot-user-registration-page.png)
+
+</ImageWindow>
+
+Registration page, for admins and service owners. New users are defaulted to service owners.
+
+<ImageWindow size="auto">
+
+![image](/img/outpost/screenshots/screenshot-user-login-page.png)
+
+</ImageWindow>
+
+Login page, for admins and service owners
+
+<ImageWindow size="auto">
+
+![image](/img/outpost/screenshots/screenshot-outpost-admin-dashboard.png)
+
+</ImageWindow>
+
+The admin user view in Outpost
+
+<ImageWindow size="auto">
+
+![image](/img/outpost/screenshots/screenshot-outpost-service-owner-dashboard.png)
+
+</ImageWindow>
+
+The service owner view in Outpost
