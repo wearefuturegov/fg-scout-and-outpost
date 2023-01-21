@@ -134,6 +134,31 @@ const config = {
           },
           { to: "/blog", label: "Blog", position: "left" },
           {
+            to: "/docs/the-outpost-platform",
+            label: "The Outpost Platform",
+            position: "left",
+          },
+          {
+            to: "/docs/outpost",
+            label: "Outpost",
+            position: "left",
+          },
+          {
+            to: "/docs/outpost-api-service",
+            label: "Outpost API",
+            position: "left",
+          },
+          {
+            to: "/docs/scout",
+            label: "Scout",
+            position: "left",
+          },
+          {
+            to: "/docs/the-outpost-platform/getting-started/faq",
+            label: "FAQ",
+            position: "right",
+          },
+          {
             href: "https://github.com/wearefuturegov/outpost",
             label: "GitHub",
             position: "right",
