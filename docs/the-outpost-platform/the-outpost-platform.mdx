@@ -9,9 +9,11 @@ id: the-outpost-platform
 import ImageWindow from "@site/src/components/ImageWindow";
 import OutpostPlatformParts from "./../partials/_outpost-platform-parts.mdx";
 
+import TOCInline from "@theme/TOCInline";
+
 <ImageWindow banner={true}>
 
-![Outpost Platform](/img/outpost-platform.png)
+![Outpost Platform](/img/outpost-platform/intro-outpost-platform.png)
 
 </ImageWindow>
 
@@ -19,13 +21,15 @@ import OutpostPlatformParts from "./../partials/_outpost-platform-parts.mdx";
 
 Currently the platform contains:
 
-<OutpostPlatformParts />
+<OutpostPlatformParts />{" "}
 
 :::note
 
 \* `Outpost` is an application, `Outpost Platform` referrs to everything making up the entire eco-system. The wider name needs [suggestions](https://github.com/wearefuturegov/outpost/discussions)!
 
 :::
+
+<TOCInline toc={toc} />
 
 ## Outpost Platform Architecture
 
@@ -35,7 +39,7 @@ There are other applications, tools and utilities which allow you expand and cus
 
 <ImageWindow size="auto">
 
-![image](/img/outpost-architecture.png)
+![image](/img/outpost-platform/diagrams/diagram-outpost-architecture.png)
 
 </ImageWindow>
 
@@ -51,13 +55,72 @@ There are other applications, tools and utilities which allow you expand and cus
 - 〽 Part of a community with a common goal
 - 👨‍👦 Provide data to people who may have been grouped under the wrong categories in the past
 
-## The Outpost Model
+## The Outpost Platform Approach
+
+### The problem we're trying to solve
+
+People, often councils, would come to us asking for help with really complex problems.
+
+Often people start off asking for a new app or website, but the real problem is nearly always deeper than that.
+
+A side effect of trying to solve for these deeper problems is that we often need to invent new, 21st century tools that don't exist yet, and that's what Outpost has become.
+
+<ImageWindow size="auto">
+
+![image](/img/outpost-platform/the-outpost-platform/councils-hold-lots-of-data.png)
+
+</ImageWindow>
+
+The deeper problem here is that **councils hold lots of data**. Councils hold lots of data about community services.
+
+Most people will be familar with this. GP surgeries, children and family centres, charities that provide support to elderly people, support groups for new parents, church fetes, and everything in between.
+
+We hold this stuff for lots of reasons, often to _signpost residents to when they come to us for help, but their needs aren't quite high enough for us to be able to offer them direct support_.
+
+<ImageWindow size="auto">
+
+![image](/img/outpost-platform/the-outpost-platform/councils-hold-lots-of-the-same-data.png)
+
+</ImageWindow>
+
+But because our organisations are structured in certain ways, we end up holding lots of the same data in different parts of the organisation.
+
+Here are some distinct datasets we have found through our work. The total number is probably two or three times this. There is a **high level of duplication between these datasets**.
+
+<ImageWindow size="auto">
+
+![image](/img/outpost-platform/the-outpost-platform/examples-of-data-duplication.png)
+
+</ImageWindow>
+
+We wanted to build a new model for service directories that can fix this problem. Central to this approach is the idea of open data standards.
+
+We're using a standard called [Open Referral UK](https://openreferraluk.org/). It's basically a standardised way of describing the community services in an area.
+
+> Making it easy to publish, find and use community services data
+> ~ Open Referral UK
+
+This is what they say about themselves. The benefit of this is threefold:
+
+- We can give residents more **useful** results and information when they go looking for things around them
+- We can **reduce duplication** of effort and data within a local authority
+- And, longer term, we can **connect the data** of different regions together and start forming a national, real-time picture of local community service provision.
+
+That last one sounds pretty abstract, but imagine people who live on the boundaries of two authorities getting truly joined-up results. Imagine no longer needing to report to Ofsted or the DfE, because they're just connected up your data.
+
+### The Outpost Model
 
 We've been building service directories and similar things for years, and we've had several attempts at solving this problem. All that research and co-design done in different places in the UK has gone into this model.
 
 <ImageWindow size="auto">
 
-![the-outpost-model.png](/img/the-outpost-model.png)
+![the-outpost-model.png](/img/outpost-platform/diagrams/diagram-the-outpost-model.png)
+
+</ImageWindow>
+
+<ImageWindow size="auto">
+
+![image](/img/outpost-platform/diagrams/diagram-outpost-platform.png)
 
 </ImageWindow>
 
@@ -82,7 +145,7 @@ There's more to the model:
 
 <ImageWindow size="auto">
 
-![what-it-isnt.png](/img/what-it-isnt.png)
+![what-it-isnt.png](/img/outpost-platform/the-outpost-platform/what-it-isnt.png)
 
 </ImageWindow>
 

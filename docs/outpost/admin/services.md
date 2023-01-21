@@ -1,3 +1,0 @@
-# Services
-
-Managing services.

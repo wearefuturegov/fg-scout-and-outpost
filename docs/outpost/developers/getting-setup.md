@@ -4,9 +4,13 @@ sidebar_position: 1
 
 # Getting setup
 
+:::caution
+Please be aware this documentation is still under construction so this section may move at some point!
+:::
+
 ## Developers guide to getting setup with Outpost
 
-Any issues, please see [Troubleshooting](./troubleshooting) or raise a [ticket](https://github.com/wearefuturegov/outpost) or ask in the [discussion board](https://github.com/wearefuturegov/outpost/discussions).
+Any issues, please see [Troubleshooting](troubleshooting.mdx) or raise a [ticket](https://github.com/wearefuturegov/outpost) or ask in the [discussion board](https://github.com/wearefuturegov/outpost/discussions).
 
 Some of these sections may not be relevent to you, if so please skip past them.
 

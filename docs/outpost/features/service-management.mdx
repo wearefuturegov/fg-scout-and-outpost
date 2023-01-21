@@ -1,0 +1,105 @@
+# Service management
+
+import ImageWindow from "@site/src/components/ImageWindow";
+import Button from "@site/src/components/Button";
+
+Outpost is a service management system.
+
+## Service page fields
+
+### Basic fields
+
+- Name\* (text)
+- Organisation \* (select)
+- Description (long text)
+- Website (url)
+- Needs referral (checkbox)
+- Taxonomy (multiple checkbox)
+- Contacts (can add multiple)
+  - Their name (text)
+  - Their role (text)
+  - Email (text)
+  - Phone (text)
+  - Make this contact publicly visible (checkbox)
+- Locations (can add multiple)
+  - Town or area (text)
+  - Postcode\* (text)
+  - Accessibility (multiple checkboxes)
+    - Accessible toilet facilities
+    - Hearing loop
+    - Car parking
+    - Changing facilities
+    - British sign language (bsl)
+    - Disabled car parking space
+    - Hoist
+    - Baby changing facilities
+    - Parking nearby
+    - Bus stop nearby
+    - Building has lift
+    - Wheelchair accessible entrance
+    - Partial wheelchair access
+  - Make this location publicly visible (checkbox)
+  - Hide the exact street address (makes only first part of postcode visible) (checkbox)
+  - Use this address for post (checkbox)
+  - Venue or building name (text)
+  - Street address (text)
+- This service is free to use (checkbox)
+- Fee (if not free) (can add multiple)
+  - Who is this fee for? (text)
+  - Amount (number) £
+  - Type (predefined dropdown)
+    - per day
+    - per half day
+    - per hour
+    - per hour - after school
+    - per hour - before school
+    - per hour - before or after school
+    - per hour - full time
+    - per hour - part time
+    - per hour - weekend
+    - per meal
+    - per month
+    - per session
+    - per term
+    - per week
+    - lower rate for second sibling
+- This service is temporarily closed (checkbox)
+- Opening times (can add multiple)
+  - Day (predefined dropdown)
+    - Monday
+    - Tuesday
+    - Wednesday
+    - Thursday
+    - Friday
+    - Saturday
+    - Sunday
+  - Opens at\* (time)
+  - Closes at\* (time)
+- Links (can add multiple)
+  - Label\* (text)
+  - URL\* (text)
+- What needs does it meet (suitability) (multiple checkboxes)
+- Minimum (ages) (number)
+- Maximum (ages) (number)
+- Make this service publicly visible (checkbox)
+- From (date)
+- To (date)
+- Labels (type ahead to select from list or type to create new)
+
+### Local offer and SEND
+
+- This service is part of the local offer (checkbox)
+- Which SEND needs can you support (multiple checkboxes)
+- Description of support provided\* (large text)
+- Link to most recent SEND report (text)
+- What outcomes does your setting, service or activity aim to achieve for children and young people with SEND and their families? (large text)
+- What recent SEND-specific training has been completed by your staff and/or volunteers? (large text)
+- How do you involve parents and how can I get involved? (large text)
+- How will you share information with me about my child’s progress? What is additional for children with SEND? (large text)
+- How accessible is the environment (indoors and outdoors)? (large text)
+- How can children and young people with SEND and their families start to use your service or activity? (large text)
+- What future plans do you have for developing your SEND provision? (large text)
+
+### Custom fields
+
+See [custom fields](custom-fields)
