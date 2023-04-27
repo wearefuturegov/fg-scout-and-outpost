@@ -17,6 +17,7 @@ export default function ImageWindow({
   dark = false,
   banner = false,
   center = true,
+  transparent = false,
 }) {
   return (
     <div
@@ -28,10 +29,10 @@ export default function ImageWindow({
         size === "lg" && styles.lg,
         size === "auto" && styles.auto,
         center === true && styles.center,
-        banner === true && styles.banner
+        banner === true && styles.banner,
+        transparent === true && styles.transparent
       )}
-      style={{ minHeight }}
-    >
+      style={{ minHeight }}>
       {children}
     </div>
   );

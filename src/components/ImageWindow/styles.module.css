@@ -70,3 +70,10 @@
   display: block;
   margin: 0px auto;
 }
+
+.imageWindow.transparent img,
+.imageWindow.transparent iframe {
+  background: transparent;
+  border: 0px;
+  box-shadow: none;
+}
