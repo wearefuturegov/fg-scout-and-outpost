@@ -34,14 +34,16 @@ This option also helps to grow the community. Each project we take on funds feat
 
 A typical project which includes Outpost, Outpost API and Scout will include:
 
-- Research and Analysis of your needs and data
-- Customisation of the platform to your needs, custom fields and taxonomies and any filters you require if setting up Scout.
-- Branding and themeing of the products
+- Research around yours and your users needs
+- Analysis and export of the existing data
+- Customisation of the platform to your needs, custom fields and taxonomies and any filters you require if setting up Scout
+- Branding and themeing of Outpost and Scout
 - Review of current advice and guidance content - to inform the best strategy for migration and opportunities for improvement
 - Setup of web analytics on Scout as per your preference and a review of reporting requirements and available tooling in your organisation to inform the best data reporting & insights strategy
 - Setup of Outpost, and the Outpost API
 - Setup of Scout(s)
 - Integration with the Ofsted feed (if required)
+- Data migration - from existing databases into Outpost Open Referral format
 - Testing with user to gather and action any feedback
 - Creation of a launch and transition plan for the new service directory
 
